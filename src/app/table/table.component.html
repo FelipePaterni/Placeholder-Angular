@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Texto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ph of placeholders">
+      <td scope="row">{{ ph.id }}</td>
+      <td>{{ limitarText(ph.title) }}</td>
+      <td>{{ limitarText(ph.body) }}</td>
+    </tr>
+  </tbody>
+</table>
